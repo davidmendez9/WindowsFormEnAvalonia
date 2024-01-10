@@ -1,0 +1,68 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="WindowsFormEnAvalonia.MainWindow"
+        Title="WindowsFormEnAvalonia" Width="800" Height="450">
+    <Grid ColumnDefinitions="*, *" RowDefinitions="1.35*, *" Background="DarkRed">
+        <Border>
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Matrícula:</Label>
+                    <TextBox Name="txtMatricula" Margin="71, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Primera Letra:</Label>
+                    <TextBox Name="txtPrimeraLetra" Margin="43, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Marca:</Label>
+                    <TextBox  Name="txtMarca" Margin="92, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Particular:</Label>
+                    <TextBox Name="txtParticular" Margin="70, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Precio:</Label>
+                    <TextBox Name="txtPrecio" Margin="92, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Años:</Label>
+                    <TextBox Name="txtAniosEdad" Margin="100, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblRutaFoto" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Ruta de la Foto:</Label>
+                    <TextBox Name="txtRutaFoto" Margin="34, 0, 0, 0" Width="150"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            
+        </Border>
+        
+        <Border Grid.Column="0" Grid.Row="1">
+            <StackPanel Margin="20, 40, 20, 20">
+                <Button Click="Modificar_Click" Name="btnModificar" HorizontalAlignment="Center" Width="100" HorizontalContentAlignment="Center" Background="White" FontWeight="Bold">Modificar</Button>
+                <StackPanel Orientation="Horizontal" Margin="25, 5, 0, 5">
+                    <Button Click="Cancelar_Click" Name="btnCancelar" HorizontalAlignment="Center" Width="100" HorizontalContentAlignment="Center" Background="White" FontWeight="Bold">Cancelar</Button>
+                    <Button Click="Aniadir_Click" Name="btnAniadir" HorizontalAlignment="Center" Width="100" HorizontalContentAlignment="Center" Background="White" FontWeight="Bold" Margin="5, 0, 5, 0">Añadir</Button>
+                    <Button Click="Aceptar_Click" Name="btnAceptar" HorizontalAlignment="Center" Width="100" HorizontalContentAlignment="Center" Background="White" FontWeight="Bold">Aceptar</Button>
+                </StackPanel>
+                <Button Click="Borrar_Click" Name="btnBorrar" HorizontalAlignment="Center" Width="100" HorizontalContentAlignment="Center" Background="White" FontWeight="Bold">Borrar</Button>
+            </StackPanel>
+        </Border>
+        
+        <Border Grid.Row="0" Grid.Column="1">
+            <StackPanel Margin="20">
+                <Label HorizontalAlignment="Center" Foreground="White">Imagen:</Label>
+                <Image Name="pbFotoCoche" MaxHeight="180" Margin="0, 10, 0, 0" Height="180" Source="C:\Users\David\RiderProjects\WindowsFormEnAvalonia\WindowsFormEnAvalonia\Imagenes\nissan.jpg"></Image>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Click="Anterior_Click" Name="btnAnterior" Width="100" Height="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" FontWeight="Bold"> ← </Button>
+                <Button Click="Siguiente_Click" Name="btnSiguiente" Width="100" Height="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" FontWeight="Bold"> → </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="WindowsFormEnAvalonia/App.axaml" value="WindowsFormEnAvalonia/WindowsFormEnAvalonia.csproj" />
+        <entry key="WindowsFormEnAvalonia/CustomDialog.axaml" value="WindowsFormEnAvalonia/WindowsFormEnAvalonia.csproj" />
+        <entry key="WindowsFormEnAvalonia/CustomMessageBox.axaml" value="WindowsFormEnAvalonia/WindowsFormEnAvalonia.csproj" />
+        <entry key="WindowsFormEnAvalonia/MainWindow.axaml" value="WindowsFormEnAvalonia/WindowsFormEnAvalonia.csproj" />
+        <entry key="WindowsFormEnAvalonia/MessageBox.axaml" value="WindowsFormEnAvalonia/WindowsFormEnAvalonia.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
